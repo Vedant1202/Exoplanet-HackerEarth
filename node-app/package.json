@@ -1,0 +1,15 @@
+{
+  "name": "exoplanet-app",
+  "version": "1.0.0",
+  "description": "Exoplanet web app based on HackerEarth hackbenchers-2 challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vedant Nandoskar",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

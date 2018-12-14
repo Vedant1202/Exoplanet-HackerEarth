@@ -1,0 +1,98 @@
+<!-- ===================================================================== -->
+                            <!-- Landing Page -->
+<!-- ===================================================================== -->
+
+  <!--************** Include Header Partials ***************-->
+  <% include /HackerEarth/Exoplanet/node-app/views/partials/header.ejs %>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-lg">
+    <a class="navbar-brand" href="#">Exoplanet</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" id="whatis" href="#" style="margin-left: 30px;">What is Exoplanet?</a>
+        <a class="nav-item nav-link" id="discover" href="#">Discovering one</a>
+        <a class="nav-item nav-link" id="analysis" href="#">Analysis</a>
+        <a class="nav-item nav-link" href="#">Footnotes</a>
+        <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+      </div>
+    </div>
+  </nav>
+
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el" width="1898" height="187" style="width: 100%; height: 100%; z-index: -10;"></canvas>
+  </div>
+
+  <div class="jumbotron" style="margin-top: 1%;">
+    <div class="container">
+      <h2>What is an Exoplanet?</h2>
+      <hr>
+      <p>
+        <a class="in-para-link" href="https://www.space.com/17738-exoplanets.html" target="_blank">Exoplanets</a> are planets beyond our own solar system. Thousands have been discovered in the past two decades,
+        mostly with NASA's Kepler Space Telescope.
+        These worlds come in a huge variety of sizes and orbits. Some are gigantic planets hugging close to their parent stars; others are icy, some rocky.
+        <a class="in-para-link" href="https://exoplanets.nasa.gov/">NASA</a> and other agencies are looking for a special kind of planet: o
+        ne that's the same size as Earth, orbiting a sun-like star in the habitable zone.
+      </p>
+      <p>
+        The <a href="https://en.wikipedia.org/wiki/Circumstellar_habitable_zone" target="_blank">habitable zone</a> is the range of distances from a star where a planet's temperature allows liquid water oceans, critical for life on Earth.
+        The earliest definition of the zone was based on simple thermal equilibrium, but current calculations of the habitable zone include many other factors,
+        including the greenhouse effect of a planet's atmosphere. This makes the boundaries of a habitable zone "fuzzy."
+      </p>
+      <img src="/images/goldilocks-zone-solar-system.jpg" alt="" style="margin-left: 20%; margin-top: 3%; padding-bottom: 7%;">
+    </div>
+  </div>
+
+  <div class="jumbotron" id="discover-para">
+    <div class="container">
+      <h2>How do astronomers discover one?</h2>
+      <hr>
+      <p>
+        One way to search for exoplanets is to look for <a class="in-para-link" href="https://spaceplace.nasa.gov/barycenter/en/" target="_blank">"wobbly"</a> stars.
+        A star that has planets doesn’t orbit perfectly around its center.
+        From far away, this off-center orbit makes the star look like it’s wobbling. Hundreds of planets have been discovered using this method.
+        However, only big planets—like Jupiter, or even larger—can be seen this way.
+        Smaller <a class="in-para-link" href="https://spaceplace.nasa.gov/exoplanet-snap/en/" target="_blank">Earth-like</a> planets are much harder to find because they create only small wobbles that are hard to detect.
+      </p>
+      <img src="/images/barycenter-side.gif" alt="wobbly star" style="margin-left: 37%; margin-top: 3%; padding-bottom: 7%;"> <i class="text text-muted" style="padding-left: 4px;">A wobbly star</i>
+      <p>
+        <a class="in-para-link" href="https://www.space.com/24903-kepler-space-telescope.html" target="_blank">Kepler launched in 2009</a> on a prime mission to observe a region in the Cygnus constellation.
+        Kepler performed that mission for four years — double its initial mission lifetime — until most of its reaction wheels (pointing devices) failed. NASA then put Kepler on a new mission called K2,
+        in which Kepler uses the pressure of the solar wind to maintain position in space. The observatory periodically switches its field of view to avoid the sun's glare.
+        Kepler's pace of planetary discovery slowed after switching to K2, but it is still found hundreds of exoplanets using the new method.
+        Its latest <a class="in-para-link" href="https://www.space.com/39703-kepler-telescope-discovers-95-exoplanets-more.html" target="_blank">data release</a>, in February 2018, contained 95 new planets.
+      </p>
+    </div>
+  </div>
+
+  <div class="jumbotron" id="analysis-para">
+    <div class="container">
+      <h2>My analysis on the dataset</h2>
+      <hr>
+      <!-- <a class="in-para-link" href="" target="_blank"></a> -->
+      <p>
+        I have done analysis on the given dataset including cleaning and refining it and have completed the following tasks as mentioned:
+        <ul>
+          <li>Understand what exoplanets are all about.</li>
+          <li>Estimating how far they are from Earth.</li>
+          <li>What is their position with respect to Earth's angle to us.</li>
+          <li>What is their orbital period if they are revolving around a star.</li>
+          <li>Is it possible to live on an orphan planet with no star around?</li>
+        </ul>
+      </p>
+      <p>
+        <a class="btn btn-info" href="#">View PDF report</a>
+        <a class="btn btn-dark" href="#" style="margin-left: 10px;">Github Repository</a>
+        <a class="btn btn-light" href="#" style="margin-left: 10px;">View live visualisation</a>
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/js/particlesjs/particles.min.js"></script>
+
+
+
+  <!--************** Include Footer Partials ***************-->
+  <% include /HackerEarth/Exoplanet/node-app/views/partials/footer.ejs %>

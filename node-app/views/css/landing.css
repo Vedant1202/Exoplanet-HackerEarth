@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+
+body{
+  background-image: url('/images/wallpapers/space-landing-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+canvas {
+    display:block;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    position: fixed;
+    z-index: -1;
+}
+
+hr{
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+p{
+  padding-top: 10px !important;
+  line-height: 32px;
+  font-size: 17px;
+}
+
+li{
+  line-height: 32px;
+  font-size: 17px;
+}
+
+.navbar{
+  font-size: 22px;
+  min-height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)) !important;
+  transition: all ease-in 0.3s !important
+}
+
+.navbar-brand{
+  font-size: 38px !important;
+  margin-left: 4% !important;
+}
+
+.nav-item{
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.nav-item:hover{
+  color: white !important;
+}
+
+.active-link{
+  color: white !important;
+}
+
+.scrolled{
+  min-height: 80px;
+  font-size: 18px !important;
+  transition: all ease-in 0.3s !important;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)) !important;
+}
+
+.jumbotron{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  text-align: justify;
+}
+
+.in-para-link{
+  color: #16a8fc !important;
+}
+
+.footer{
+  color: white !important;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
