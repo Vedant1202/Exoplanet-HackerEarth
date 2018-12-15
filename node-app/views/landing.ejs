@@ -3,7 +3,8 @@
 <!-- ===================================================================== -->
 
   <!--************** Include Header Partials ***************-->
-  <% include /HackerEarth/Exoplanet/node-app/views/partials/header.ejs %>
+  <!-- <% //include /HackerEarth/Exoplanet/node-app/views/partials/header.ejs %>    ======== Only for local machine ====== (remove forward slashes) -->
+  <% include /app/views/partials/header.ejs %>
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-lg">
     <a class="navbar-brand" href="#">Exoplanet</a>
@@ -83,7 +84,7 @@
         </ul>
       </p>
       <p>
-        <a class="btn btn-info" href="#">View PDF report</a>
+        <a class="btn btn-info" href="#" id="pdf-report">View PDF report</a>
         <a class="btn btn-dark" href="https://github.com/Vedant1202/Exoplanet-HackerEarth" target="_blank" style="margin-left: 10px;">Github Repository</a>
         <a class="btn btn-light" href="/visuals" style="margin-left: 10px;">View the analysis</a>
       </p>
@@ -95,6 +96,7 @@
 
 
   <!--************** Include Footer Partials ***************-->
-  <% include /HackerEarth/Exoplanet/node-app/views/partials/footer.ejs %>
+  <!-- <% //include /HackerEarth/Exoplanet/node-app/views/partials/footer.ejs %>     ======== Only for local machine ====== (remove forward slashes)-->
+  <% include /app/views/partials/footer.ejs %>
 
   <script type="text/javascript" src="/js/landing.js"></script>

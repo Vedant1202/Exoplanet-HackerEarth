@@ -1,5 +1,7 @@
 var express = require('express'),
-    app     = express();
+    app     = express(),
+    ip      = process.env.IP || null
+    port    = process.env.PORT || 4050;
 
 
 //set default files to ejs only
@@ -25,6 +27,6 @@ app.get('/visuals', (req, res) => {
 //------------------------------ Setup Server ---------------------------//
 //======================================================================//
 
-app.listen(4050, () => {
+app.listen(port, ip, () => {
   console.log("Exoplanet server has started on port: 4050");
 });

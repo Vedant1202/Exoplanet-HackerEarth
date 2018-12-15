@@ -1,2 +1,3 @@
 node-app/node_modules/
-dash-visualisations/
+node-app/.git/
+node-app/.gitignore

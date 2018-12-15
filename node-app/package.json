@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Exoplanet web app based on HackerEarth hackbenchers-2 challenge",
   "main": "app.js",
+  "engines": {
+  "node": "10.5.0",
+  "npm": "6.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Vedant Nandoskar",
   "license": "MIT",

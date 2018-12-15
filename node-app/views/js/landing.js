@@ -167,6 +167,9 @@
       });
     });
 
+    $('#pdf-report').click(function () {
+      alert('Sorry, PDF not yet ready!! Working on it..');
+    });
 
     // GO TO TOP
     $(".scrollup").click(function() {

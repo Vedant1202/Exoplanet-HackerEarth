@@ -4,10 +4,11 @@
 
 
 body{
-  background-image: url('/images/wallpapers/space-landing-1.jpg');
+  background-image: url('/images/wallpapers/space-landing-1-compress.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   font-family: 'Nunito', sans-serif !important;
 }
 
