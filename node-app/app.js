@@ -8,14 +8,16 @@ app.set('view engine', 'ejs');
 //setup express
 app.use(express.static(__dirname + '/views'));
 
-console.log(__dirname + '/views');
-
 //=======================================================================//
 //------------------------------ Routes ---------------------------//
 //======================================================================//
 
 app.get('/', (req, res) => {
   res.render('landing');
+});
+
+app.get('/visuals', (req, res) => {
+  res.render('visuals');
 });
 
 

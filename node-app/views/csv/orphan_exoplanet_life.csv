@@ -1,0 +1,4 @@
+,PlanetIdentifier,TypeFlag,PlanetaryMassJpt,RadiusJpt,SurfaceTempK,AgeGyr,DiscoveryMethod,DiscoveryYear,LastUpdated,RightAscension,Declination,DistFromSunParsec,ListsPlanetIsOn
+719,PSO J318.5-22,3,6.5,1.53,1160.0,,imaging,2013.0,13/10/03,21 14 08,+22 51 36,24.6,"Confirmed planets, Orphan planets"
+969,CFBDSIR2149,3,5.5,,,,imaging,2012.0,12/11/14,21 49 47,-04 03 08,40.0,"Confirmed planets, Orphan planets"
+2915,WISE 0855-0714,3,6.0,,,3.0,imaging,2014.0,16/06/02,08 55 11,-07 45 17,2.31,Confirmed planets

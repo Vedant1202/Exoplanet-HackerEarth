@@ -1,0 +1,184 @@
+<!-- ===================================================================== -->
+                            <!-- Landing Page -->
+<!-- ===================================================================== -->
+
+  <!--************** Include Header Partials ***************-->
+  <% include /HackerEarth/Exoplanet/node-app/views/partials/header.ejs %>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-lg">
+    <a class="navbar-brand" href="/">Exoplanet</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link rounded" id="data-top" href="#" style="margin-left: 30px;">Data Analysis section</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="particles-js-visuals">
+    <canvas class="particles-js-canvas-el" width="1898" height="187" style="width: 100%; height: 100%; z-index: -10;"></canvas>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container" style="text-align: justify">
+      <p>
+        <h1 style="text-align: center;">Data Analysis Section</h1>
+        <hr style="width: 80%">
+      </p>
+      <p>
+        This is the data analysis and visualisation page. Here I've uploaded all the data analysis done with the <a class="in-para-link" href="">dataset that was provided</a>.
+        It is divided into the respective subtopics depending upon the analysis done. Each subtopic has it's own live visualisation as well as a .csv file
+        containing the data which was analysed/derived/calculated/existed and was used to make the visualisation.
+        <br>
+        <p>
+          Feedback on any of the topics or any suggestions are welcomed. You can reach out to me on my
+          <a class="in-para-link" href="https://www.github.com/Vedant1202" target="_blank">Github</a> for the same.
+        </p>
+      </p>
+    </div>
+    <div class="container">
+      <p>
+        <ol>
+          <li class="li-analysis">
+            <h4>Distance between Earth and exoplanets:</h4>
+            <hr style="width: 20%; margin-right: 80% !important;">
+            <p>
+              I've assumed the distance between earth and the exoplanets is approximately equal to the distance between sun and then as the distance between
+              earth and the sun is negligibly small as compared to that between the earth and the exoplanets.
+              <br>
+              <div >
+                <a class="btn btn-light" href="/plotly-visuals/Dist-From-Earth-Exoplanet.html" target="_blank" style="margin-right: 20px;">View visualisation</a>
+                <a class="btn btn-info" href="/csv/DistBetwEarthAndExoplanet.csv">Download .csv</a>
+              </div>
+            </p>
+          </li>
+          <li class="li-analysis">
+            <h4>Angle and position of exoplanets with earth:</h4>
+            <hr style="width: 20%; margin-right: 80% !important;">
+            <p>
+              This was a bit tricky as there were many operations required to get to the final datasheet. All of it is available in the jupyter notebook in the
+              <a class="in-para-link" href="https://github.com/Vedant1202/Exoplanet-HackerEarth">github repo</a>. The angle considered is between earth,
+              the sun and the exoplanet and is plotted as a polar graph.
+              <br>
+              <div >
+                <a class="btn btn-light" href="/plotly-visuals/dist-earth.html" target="_blank" style="margin-right: 20px;">View visualisation</a>
+                <a class="btn btn-info" href="/csv/DistFromEarthAndAngle.csv">Download .csv</a>
+              </div>
+            </p>
+          </li>
+          <li class="li-analysis">
+            <h4>Orbital period of Exoplanets:</h4>
+            <hr style="width: 20%; margin-right: 80% !important;">
+            <p>
+              I've plotted the orbital period of each exoplanet and the exoplanets are further classified according to their status. The scale of orbital period
+              is logarithmic. It is interesting to note that the orbital period of each category is almost finely divided into certain domain of values.
+              You can view the visualisation by clicking below.
+              <div >
+                <a class="btn btn-light" href="/plotly-visuals/Orbital-Period-Exoplanet.html" target="_blank" style="margin-right: 20px;">View visualisation</a>
+                <a class="btn btn-info" href="/csv/exoplanet_orbital_period.csv">Download .csv</a>
+              </div>
+            </p>
+          </li>
+          <li class="li-analysis">
+            <h4>Can life exist on an Exoplanet without a host Star?</h4>
+            <hr style="width: 20%; margin-right: 80% !important;">
+            <p>
+              As to answer this question, the short one is no. This is because without having a parent star the exoplanet cannot have habitable conditions
+              that are required to sustain life. The given table below illustrates it perfectly. Thus, as far as the theories suggest, a planet needs to
+              have a parent star and needs to be in it's habitable zone to sustain life.
+              <p>
+                As for the planets having no parent star (orphan planets) which are given in the dataset provided for the competition,
+                a .csv file has been provided below the table containing all the important data.
+              </p>
+              <p>
+                <u><h5>Ecological limits to life</h5></u>
+                <table style="width:100%">
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Limit</th>
+                    <th>Notes</th>
+                  </tr>
+                  <tr>
+                    <td>Lower Temperature</td>
+                    <td>∼ −15 °C</td>
+                    <td>Limited by liquid water associated with thin films or saline solutions.</td>
+                  </tr>
+                  <tr>
+                    <td>Upper Temperature</td>
+                    <td>122 °C</td>
+                    <td>Solubility of lipids in water, protein stability.</td>
+                  </tr>
+                  <tr>
+                    <td>Maximum Pressure</td>
+                    <td>1,100 atm</td>
+                    <td> <a class="in-para-link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4156692/#r10" target="_blank">Reference #10</a> </td>
+                  </tr>
+                  <tr>
+                    <td>Low light</td>
+                    <td>∼0.01 μmol m−2⋅s−1 = 5 × 10−6 direct sunlight</td>
+                    <td>Algae under ice and deep sea.</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>0–12.5</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Salinity</td>
+                    <td>Saturated NaCl</td>
+                    <td>Depends on the salt and temperature.</td>
+                  </tr>
+                  <tr>
+                    <td>Water activity</td>
+                    <td>
+                      0.6
+                      <br>
+                      0.8
+                    </td>
+                    <td>
+                      Yeasts and molds.
+                      <br>
+                      Bacteria.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>UV</td>
+                    <td>≥1,000 Jm<sup>−2</sup></td>
+                    <td> <i>Deinococcus radiodurans.</i> </td>
+                  </tr>
+                  <tr>
+                    <td>Radiation</td>
+                    <td>
+                      50 Gy/h
+                      <br>
+                      12,000 Gy
+                    </td>
+                    <td>
+                      Deinococcus radiodurans growth with continuous dose.
+                      <br>
+                      	Acute dose, higher for dry or frozen state.
+                    </td>
+                  </tr>
+                </table>
+              </p>
+              <div>
+                <a class="btn btn-warning" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4156692/" target="_blank" style="margin-right: 20px;">View source reference</a>
+                <a class="btn btn-info" href="./life-requirements.pdf" target="_blank" style="margin-right: 20px;">Download PDF</a>
+                <a class="btn btn-success" href="/csv/orphan_exoplanet_life.csv" style="margin-right: 20px;">Download .csv</a>
+              </div>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="/js/particlesjs/particles.min.js"></script>
+
+  <!--************** Include Footer Partials ***************-->
+  <% include /HackerEarth/Exoplanet/node-app/views/partials/footer.ejs %>
+
+  <script type="text/javascript" src="/js/visuals.js"></script>

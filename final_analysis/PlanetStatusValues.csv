@@ -1,0 +1,14 @@
+Number,ListsPlanetIsOn
+0,Confirmed planets
+1,Controversial
+2,"Confirmed planets, Planets in binary systems, S-type"
+3,"Controversial, Planets in binary systems, S-type"
+4,"Confirmed planets, Planets in binary systems, P-type"
+5,"Controversial, Planets in binary systems, P-type"
+6,Solar System
+7,"Confirmed planets, Planets in open clusters"
+8,"Confirmed planets, Orphan planets"
+9,Retracted planet candidate
+10,"Confirmed planets, Planets in binary systems, P-type, Planets in globular clusters"
+11,"Planets in binary systems, S-type, Confirmed planets"
+12,Kepler Objects of Interest

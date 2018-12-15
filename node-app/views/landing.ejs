@@ -12,10 +12,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" id="whatis" href="#" style="margin-left: 30px;">What is Exoplanet?</a>
-        <a class="nav-item nav-link" id="discover" href="#">Discovering one</a>
-        <a class="nav-item nav-link" id="analysis" href="#">Analysis</a>
-        <a class="nav-item nav-link" href="#">Footnotes</a>
+        <a class="nav-item nav-link rounded" id="whatis" href="#" style="margin-left: 30px;">What is Exoplanet?</a>
+        <a class="nav-item nav-link rounded" id="discover" href="#">Discovering one</a>
+        <a class="nav-item nav-link rounded" id="analysis" href="#">Analysis</a>
+        <a class="nav-item nav-link rounded" id="footer-link" href="#">Footnotes</a>
         <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
       </div>
     </div>
@@ -37,7 +37,7 @@
         ne that's the same size as Earth, orbiting a sun-like star in the habitable zone.
       </p>
       <p>
-        The <a href="https://en.wikipedia.org/wiki/Circumstellar_habitable_zone" target="_blank">habitable zone</a> is the range of distances from a star where a planet's temperature allows liquid water oceans, critical for life on Earth.
+        The <a class="in-para-link" href="https://en.wikipedia.org/wiki/Circumstellar_habitable_zone" target="_blank">habitable zone</a> is the range of distances from a star where a planet's temperature allows liquid water oceans, critical for life on Earth.
         The earliest definition of the zone was based on simple thermal equilibrium, but current calculations of the habitable zone include many other factors,
         including the greenhouse effect of a planet's atmosphere. This makes the boundaries of a habitable zone "fuzzy."
       </p>
@@ -84,8 +84,8 @@
       </p>
       <p>
         <a class="btn btn-info" href="#">View PDF report</a>
-        <a class="btn btn-dark" href="#" style="margin-left: 10px;">Github Repository</a>
-        <a class="btn btn-light" href="#" style="margin-left: 10px;">View live visualisation</a>
+        <a class="btn btn-dark" href="https://github.com/Vedant1202/Exoplanet-HackerEarth" target="_blank" style="margin-left: 10px;">Github Repository</a>
+        <a class="btn btn-light" href="/visuals" style="margin-left: 10px;">View the analysis</a>
       </p>
     </div>
   </div>
@@ -96,3 +96,5 @@
 
   <!--************** Include Footer Partials ***************-->
   <% include /HackerEarth/Exoplanet/node-app/views/partials/footer.ejs %>
+
+  <script type="text/javascript" src="/js/landing.js"></script>
