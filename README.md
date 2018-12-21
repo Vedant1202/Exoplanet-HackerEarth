@@ -1,9 +1,10 @@
 <h1>Exoplanet Webapp</h1>
-<hr>
 This repository contains a webapp project for <a href="https://hackbenchers-2.hackerearth.com/">hackbenchers-2</a>
 hackathon at <a href="https://www.hackerearth.com">HackerEarth</a>.
 <p>
-  The webiste is live and available at this <a href="https://exoplanet-hackerearth-app.herokuapp.com/">link</a>.
+  <h3>
+    The website is live and available at this <a href="https://exoplanet-hackerearth-app.herokuapp.com/">link</a>.
+  </h3>
   <br>
   The website is hosted on heroku free server and hence the visualisations may take longer to load.
 </p>
