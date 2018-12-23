@@ -41,6 +41,17 @@ table, th, td {
   padding: 6px;
 }
 
+@media only screen and (max-width: 600px) {
+  #solar-system-img {
+    width : 100% !important;
+    margin-left : 0% !important;
+  }
+  #wobbly-star-img {
+    width : 65% !important;
+    margin-left : 0% !important;
+  }
+}
+
 
 .navbar{
   font-size: 22px;
