@@ -50,6 +50,9 @@ table, th, td {
     width : 65% !important;
     margin-left : 0% !important;
   }
+  .btn-landing-links{
+    margin : 3% !important;
+  }
 }
 
 
